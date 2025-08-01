@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,11 +16,13 @@
             background-color: #1A202C;
             color: #E2E8F0;
         }
+
         .chart-container {
             position: relative;
             width: 100%;
             height: 350px;
         }
+
         .kpi-card {
             background-color: #2D3748;
             border-radius: 0.75rem;
@@ -31,10 +34,12 @@
             flex-direction: column;
             justify-content: center;
         }
+
         .kpi-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 0 20px rgba(56, 178, 172, 0.4);
         }
+
         .flow-step {
             background-color: #2D3748;
             border-left: 4px solid #38B2AC;
@@ -42,41 +47,51 @@
             border-radius: 0.5rem;
             transition: background-color 0.3s;
         }
+
         .flow-step:hover {
             background-color: #4A5568;
         }
+
         .accent-text {
             color: #38B2AC;
         }
+
         .danger-text {
             color: #F56565;
         }
+
         .success-text {
             color: #48BB78;
         }
+
         .section-title {
             color: #FFFFFF;
             font-weight: 900;
             text-transform: uppercase;
             letter-spacing: 0.1em;
         }
+
         .section-subtitle {
             color: #A0AEC0;
         }
+
         .reference-link {
             color: #38B2AC;
             text-decoration: none;
             word-break: break-all;
         }
+
         .reference-link:hover {
             text-decoration: underline;
         }
+
         .source-tag {
             font-size: 0.75rem;
             color: #718096;
             text-align: center;
             margin-top: 0.5rem;
         }
+
         .gemini-button {
             background-color: #38B2AC;
             color: #1A202C;
@@ -85,14 +100,17 @@
             border-radius: 0.5rem;
             transition: background-color 0.3s, transform 0.3s;
         }
+
         .gemini-button:hover {
             background-color: #319795;
             transform: scale(1.05);
         }
+
         .gemini-button:disabled {
             background-color: #4A5568;
             cursor: not-allowed;
         }
+
         .gemini-result h3 {
             font-size: 1.25rem;
             font-weight: bold;
@@ -100,40 +118,48 @@
             margin-top: 1rem;
             margin-bottom: 0.5rem;
         }
-         .gemini-result ul {
+
+        .gemini-result ul {
             list-style-type: disc;
             margin-left: 1.5rem;
         }
     </style>
 </head>
+
 <body class="antialiased">
 
     <header class="bg-gray-900 text-white py-10 px-4 text-center">
         <h1 class="text-4xl md:text-5xl font-extrabold mb-2">Fraudes Bancárias por Engenharia Social</h1>
-        <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-400">Uma análise sobre os impactos econômicos, jurídicos e sociais no Brasil</p>
+        <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-400">Uma análise sobre os impactos econômicos,
+            jurídicos e sociais no Brasil</p>
     </header>
 
     <main class="container mx-auto p-4 md:p-8">
-        
+
         <section id="overview" class="mb-16">
             <h2 class="text-3xl section-title text-center mb-4">O Tamanho do Problema</h2>
-            <p class="text-center text-lg section-subtitle mb-8 max-w-4xl mx-auto">A engenharia social, que manipula a confiança humana, é a principal causa de perdas financeiras, superando falhas tecnológicas. Os números revelam um cenário alarmante e em plena expansão.</p>
-            
+            <p class="text-center text-lg section-subtitle mb-8 max-w-4xl mx-auto">A engenharia social, que manipula a
+                confiança humana, é a principal causa de perdas financeiras, superando falhas tecnológicas. Os números
+                revelam um cenário alarmante e em plena expansão.</p>
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="kpi-card text-center">
                     <p class="text-5xl font-black accent-text">R$ 10,1 Bi</p>
                     <p class="text-xl font-semibold mt-2 text-white">Prejuízo em 2024</p>
-                    <p class="text-gray-400 mt-1">Aumento de 17% em relação a 2023, demonstrando a aceleração das fraudes.</p>
+                    <p class="text-gray-400 mt-1">Aumento de 17% em relação a 2023, demonstrando a aceleração das
+                        fraudes.</p>
                 </div>
                 <div class="kpi-card text-center">
                     <p class="text-5xl font-black accent-text">70%</p>
                     <p class="text-xl font-semibold mt-2 text-white">Baseado em Engenharia Social</p>
-                    <p class="text-gray-400 mt-1">A maioria dos golpes explora o fator humano, não falhas de sistema.</p>
+                    <p class="text-gray-400 mt-1">A maioria dos golpes explora o fator humano, não falhas de sistema.
+                    </p>
                 </div>
                 <div class="kpi-card text-center">
                     <p class="text-5xl font-black accent-text">4</p>
                     <p class="text-xl font-semibold mt-2 text-white">Golpes por Minuto</p>
-                    <p class="text-gray-400 mt-1">Frequência média de estelionatos registrados no Brasil, somando todas as modalidades.</p>
+                    <p class="text-gray-400 mt-1">Frequência média de estelionatos registrados no Brasil, somando todas
+                        as modalidades.</p>
                 </div>
             </div>
         </section>
@@ -142,24 +168,29 @@
 
         <section id="economics" class="mb-16">
             <h2 class="text-3xl section-title text-center mb-4">O Buraco Negro Econômico</h2>
-            <p class="text-center text-lg section-subtitle mb-8 max-w-4xl mx-auto">O avanço das fraudes representa um dreno significativo na economia. O Pix, apesar de eficiente, tornou-se o canal preferido dos criminosos para a rápida movimentação dos valores.</p>
-            
+            <p class="text-center text-lg section-subtitle mb-8 max-w-4xl mx-auto">O avanço das fraudes representa um
+                dreno significativo na economia. O Pix, apesar de eficiente, tornou-se o canal preferido dos criminosos
+                para a rápida movimentação dos valores.</p>
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <div class="kpi-card">
                     <h3 class="text-xl font-bold text-center mb-4 text-white">Evolução do Prejuízo Total</h3>
                     <div class="chart-container">
                         <canvas id="totalLossChart"></canvas>
                     </div>
-                    <p class="text-center text-gray-400 mt-4">O prejuízo total com fraudes financeiras saltou de R$ 8,6 bilhões para R$ 10,1 bilhões em apenas um ano.</p>
+                    <p class="text-center text-gray-400 mt-4">O prejuízo total com fraudes financeiras saltou de R$ 8,6
+                        bilhões para R$ 10,1 bilhões em apenas um ano.</p>
                     <p class="source-tag">Fonte: FEBRABAN</p>
                 </div>
                 <div class="kpi-card">
-                    <h3 class="text-xl font-bold text-center mb-4 text-white">Crescimento Exponencial das Fraudes via Pix</h3>
+                    <h3 class="text-xl font-bold text-center mb-4 text-white">Crescimento Exponencial das Fraudes via
+                        Pix</h3>
                     <div class="chart-container">
                         <canvas id="pixLossChart"></canvas>
                     </div>
-                     <p class="text-center text-gray-400 mt-4">As perdas no sistema de pagamento instantâneo cresceram 70%, atingindo quase R$ 5 bilhões em 2024.</p>
-                     <p class="source-tag">Fonte: Banco Central do Brasil</p>
+                    <p class="text-center text-gray-400 mt-4">As perdas no sistema de pagamento instantâneo cresceram
+                        70%, atingindo quase R$ 5 bilhões em 2024.</p>
+                    <p class="source-tag">Fonte: Banco Central do Brasil</p>
                 </div>
             </div>
         </section>
@@ -168,20 +199,24 @@
 
         <section id="crime-migration" class="mb-16">
             <h2 class="text-3xl section-title text-center mb-4">Migração do Crime: Do Real para o Virtual</h2>
-            <p class="text-center text-lg section-subtitle mb-8 max-w-4xl mx-auto">Os dados de segurança pública revelam uma tendência inequívoca: enquanto os crimes patrimoniais violentos diminuem, as fraudes eletrônicas explodem, atraindo criminosos pela alta lucratividade e percepção de baixa punibilidade.</p>
+            <p class="text-center text-lg section-subtitle mb-8 max-w-4xl mx-auto">Os dados de segurança pública revelam
+                uma tendência inequívoca: enquanto os crimes patrimoniais violentos diminuem, as fraudes eletrônicas
+                explodem, atraindo criminosos pela alta lucratividade e percepção de baixa punibilidade.</p>
             <div class="kpi-card mb-8">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div class="text-center border-b md:border-b-0 md:border-r border-gray-600 pb-8 md:pb-0 md:pr-8">
                         <h3 class="text-2xl font-bold text-white mb-4">A Epidemia de Fraudes Virtuais</h3>
                         <p class="text-6xl font-black danger-text mb-2">↑ 408%</p>
                         <p class="text-xl font-semibold text-white">Crescimento de Estelionatos desde 2018</p>
-                        <p class="text-gray-400 mt-2">Mais de 2,1 milhões de casos registrados em 2024, uma taxa de 1.019,2 por 100 mil habitantes.</p>
+                        <p class="text-gray-400 mt-2">Mais de 2,1 milhões de casos registrados em 2024, uma taxa de
+                            1.019,2 por 100 mil habitantes.</p>
                     </div>
                     <div class="text-center pt-8 md:pt-0">
                         <h3 class="text-2xl font-bold text-white mb-4">A Queda dos Roubos Físicos</h3>
                         <p class="text-6xl font-black success-text mb-2">↓ 51%</p>
                         <p class="text-xl font-semibold text-white">Redução de Roubos desde 2018</p>
-                        <p class="text-gray-400 mt-2">Quedas expressivas em roubos de veículo (-10,4%), comércio (-24,4%) e a transeuntes (-22,6%).</p>
+                        <p class="text-gray-400 mt-2">Quedas expressivas em roubos de veículo (-10,4%), comércio
+                            (-24,4%) e a transeuntes (-22,6%).</p>
                     </div>
                 </div>
                 <p class="source-tag mt-8">Fonte: Anuário Brasileiro de Segurança Pública</p>
@@ -192,130 +227,174 @@
 
         <section id="institutional-impact" class="mb-16">
             <h2 class="text-3xl section-title text-center mb-4">O Custo da Defesa</h2>
-             <p class="text-center text-lg section-subtitle mb-8 max-w-4xl mx-auto">As fraudes não geram prejuízo apenas para os clientes. As instituições financeiras enfrentam custos massivos em tecnologia, pessoal e danos de reputação para combater a criminalidade.</p>
+            <p class="text-center text-lg section-subtitle mb-8 max-w-4xl mx-auto">As fraudes não geram prejuízo apenas
+                para os clientes. As instituições financeiras enfrentam custos massivos em tecnologia, pessoal e danos
+                de reputação para combater a criminalidade.</p>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="kpi-card text-center">
-                     <p class="text-5xl font-black accent-text">R$ 47,4 Bi</p>
+                    <p class="text-5xl font-black accent-text">R$ 47,4 Bi</p>
                     <p class="text-xl font-semibold mt-2 text-white">Investimento em Tecnologia</p>
-                    <p class="text-gray-400 mt-1">Valor total projetado pelos bancos para 2024, impulsionado pela necessidade de segurança.</p>
+                    <p class="text-gray-400 mt-1">Valor total projetado pelos bancos para 2024, impulsionado pela
+                        necessidade de segurança.</p>
                 </div>
                 <div class="kpi-card text-center">
                     <p class="text-5xl font-black accent-text">10%</p>
                     <p class="text-xl font-semibold mt-2 text-white">Foco em Cibersegurança</p>
-                    <p class="text-gray-400 mt-1">Cerca de R$ 4,7 bilhões são destinados exclusivamente para prevenir fraudes e ataques cibernéticos.</p>
+                    <p class="text-gray-400 mt-1">Cerca de R$ 4,7 bilhões são destinados exclusivamente para prevenir
+                        fraudes e ataques cibernéticos.</p>
                 </div>
             </div>
-             <p class="text-center text-md text-gray-500 mt-8 max-w-3xl mx-auto">Além do investimento direto, os bancos arcam com os custos de equipes antifraude, processos judiciais e a perda de confiança do cliente, um ativo intangível de valor incalculável.</p>
+            <p class="text-center text-md text-gray-500 mt-8 max-w-3xl mx-auto">Além do investimento direto, os bancos
+                arcam com os custos de equipes antifraude, processos judiciais e a perda de confiança do cliente, um
+                ativo intangível de valor incalculável.</p>
         </section>
 
         <hr class="my-16 border-gray-700">
 
         <section id="modus-operandi" class="mb-16">
             <h2 class="text-3xl section-title text-center mb-4">A Anatomia do Golpe</h2>
-            <p class="text-center text-lg section-subtitle mb-8 max-w-4xl mx-auto">Os criminosos se valem de táticas que exploram emoções como medo, urgência e confiança. Conhecer o *modus operandi* é o primeiro passo para a prevenção.</p>
-            
+            <p class="text-center text-lg section-subtitle mb-8 max-w-4xl mx-auto">Os criminosos se valem de táticas que
+                exploram emoções como medo, urgência e confiança. Conhecer o *modus operandi* é o primeiro passo para a
+                prevenção.</p>
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="kpi-card">
                     <p class="text-4xl text-center mb-4">📞</p>
                     <h3 class="text-xl font-bold text-center text-white">Golpe da Falsa Central</h3>
-                    <p class="text-gray-400 mt-2 text-center">A vítima recebe um SMS sobre uma compra falsa e é instruída a ligar para um 0800 fraudulento. O falso atendente, usando dados vazados da vítima, a convence a fornecer senhas, instalar apps maliciosos ou realizar uma "transferência de segurança".</p>
+                    <p class="text-gray-400 mt-2 text-center">A vítima recebe um SMS sobre uma compra falsa e é
+                        instruída a ligar para um 0800 fraudulento. O falso atendente, usando dados vazados da vítima, a
+                        convence a fornecer senhas, instalar apps maliciosos ou realizar uma "transferência de
+                        segurança".</p>
                 </div>
                 <div class="kpi-card">
                     <p class="text-4xl text-center mb-4">🏍️</p>
                     <h3 class="text-xl font-bold text-center text-white">Golpe do Falso Motoboy</h3>
-                    <p class="text-gray-400 mt-2 text-center">Uma variação da Falsa Central. Após o contato, um motoboy é enviado para recolher o cartão "clonado". A vítima é orientada a cortar o cartão, mas preservando o chip. Com o chip e a senha, os golpistas realizam compras.</p>
+                    <p class="text-gray-400 mt-2 text-center">Uma variação da Falsa Central. Após o contato, um motoboy
+                        é enviado para recolher o cartão "clonado". A vítima é orientada a cortar o cartão, mas
+                        preservando o chip. Com o chip e a senha, os golpistas realizam compras.</p>
                 </div>
                 <div class="kpi-card">
                     <p class="text-4xl text-center mb-4">📱</p>
                     <h3 class="text-xl font-bold text-center text-white">Golpe do Falso Parente</h3>
-                    <p class="text-gray-400 mt-2 text-center">Usando a foto da vítima, o golpista contata familiares via WhatsApp de um novo número, alegando uma emergência (ex: problema no carro, conta a pagar) e pedindo uma transferência Pix urgente.</p>
+                    <p class="text-gray-400 mt-2 text-center">Usando a foto da vítima, o golpista contata familiares via
+                        WhatsApp de um novo número, alegando uma emergência (ex: problema no carro, conta a pagar) e
+                        pedindo uma transferência Pix urgente.</p>
                 </div>
                 <div class="kpi-card">
                     <p class="text-4xl text-center mb-4">📄</p>
                     <h3 class="text-xl font-bold text-center text-white">Golpe do Falso Boleto</h3>
-                    <p class="text-gray-400 mt-2 text-center">Criminosos enviam boletos falsificados por e-mail ou WhatsApp, idênticos aos de serviços reais (condomínio, escola, financiamento). Ao pagar, o dinheiro é desviado para a conta do golpista.</p>
+                    <p class="text-gray-400 mt-2 text-center">Criminosos enviam boletos falsificados por e-mail ou
+                        WhatsApp, idênticos aos de serviços reais (condomínio, escola, financiamento). Ao pagar, o
+                        dinheiro é desviado para a conta do golpista.</p>
                 </div>
             </div>
         </section>
-        
+
         <hr class="my-16 border-gray-700">
 
         <section id="criminal-playbook" class="mb-16">
             <h2 class="text-3xl section-title text-center mb-4">O Ecossistema do Crime Organizado</h2>
-            <p class="text-center text-lg section-subtitle mb-8 max-w-4xl mx-auto">A fraude moderna não é obra de amadores. Organizações criminosas operam como empresas, com uma cadeia de produção bem definida e uso de tecnologia de ponta.</p>
+            <p class="text-center text-lg section-subtitle mb-8 max-w-4xl mx-auto">A fraude moderna não é obra de
+                amadores. Organizações criminosas operam como empresas, com uma cadeia de produção bem definida e uso de
+                tecnologia de ponta.</p>
 
             <div class="space-y-8">
                 <div class="flow-step">
                     <div>
                         <p class="text-2xl font-black accent-text mb-2">ETAPA 1: O Combustível</p>
                         <h4 class="text-xl font-bold text-white mb-2">Vazamento e Venda de Dados</h4>
-                        <p class="text-gray-400">Dados pessoais (CPF, nome, endereço) são roubados de empresas e governos e vendidos em mercados ilegais na dark web. Esse é o "pecado original" que arma os criminosos.</p>
+                        <p class="text-gray-400">Dados pessoais (CPF, nome, endereço) são roubados de empresas e
+                            governos e vendidos em mercados ilegais na dark web. Esse é o "pecado original" que arma os
+                            criminosos.</p>
                     </div>
                 </div>
                 <div class="flow-step">
                     <div>
                         <p class="text-2xl font-black accent-text mb-2">ETAPA 2: O Planejamento</p>
                         <h4 class="text-xl font-bold text-white mb-2">Seleção do Alvo e Preparação</h4>
-                        <p class="text-gray-400">Com os dados em mãos, a quadrilha seleciona as vítimas (ex: idosos, pessoas com financiamentos) e prepara o roteiro do golpe, utilizando as informações para criar uma abordagem convincente.</p>
+                        <p class="text-gray-400">Com os dados em mãos, a quadrilha seleciona as vítimas (ex: idosos,
+                            pessoas com financiamentos) e prepara o roteiro do golpe, utilizando as informações para
+                            criar uma abordagem convincente.</p>
                     </div>
                 </div>
                 <div class="flow-step">
                     <div>
                         <p class="text-2xl font-black accent-text mb-2">ETAPA 3: O Ataque</p>
                         <h4 class="text-xl font-bold text-white mb-2">Execução da Engenharia Social</h4>
-                        <p class="text-gray-400">O contato é feito usando técnicas avançadas como IA para clonagem de voz (deepfake) e mascaramento de chamadas (spoofing), tornando o golpe quase impossível de ser detectado.</p>
+                        <p class="text-gray-400">O contato é feito usando técnicas avançadas como IA para clonagem de
+                            voz (deepfake) e mascaramento de chamadas (spoofing), tornando o golpe quase impossível de
+                            ser detectado.</p>
                     </div>
                 </div>
-                 <div class="flow-step">
+                <div class="flow-step">
                     <div>
                         <p class="text-2xl font-black accent-text mb-2">ETAPA 4: A Monetização</p>
                         <h4 class="text-xl font-bold text-white mb-2">Pulverização e Lavagem do Dinheiro</h4>
-                        <p class="text-gray-400">O dinheiro obtido é transferido instantaneamente para uma rede de "contas laranja", onde é pulverizado em dezenas de outras contas em segundos, dificultando o rastreio e a recuperação.</p>
+                        <p class="text-gray-400">O dinheiro obtido é transferido instantaneamente para uma rede de
+                            "contas laranja", onde é pulverizado em dezenas de outras contas em segundos, dificultando o
+                            rastreio e a recuperação.</p>
                     </div>
                 </div>
             </div>
 
             <div class="mt-12">
-                <h3 class="text-2xl font-bold text-center mb-4 text-white">Exemplo Prático: A Divisão de Tarefas no Crime</h3>
+                <h3 class="text-2xl font-bold text-center mb-4 text-white">Exemplo Prático: A Divisão de Tarefas no
+                    Crime</h3>
                 <div class="kpi-card">
-                    <h4 class="text-xl font-bold text-center text-white mb-4">O "Fornecedor" do Golpe do Falso Advogado</h4>
-                    <p class="text-gray-400 text-center mb-6">Em uma operação no Espírito Santo, a polícia prendeu um suspeito que não aplicava os golpes diretamente, mas atuava como um "provedor de serviços" para outras quadrilhas.</p>
+                    <h4 class="text-xl font-bold text-center text-white mb-4">O "Fornecedor" do Golpe do Falso Advogado
+                    </h4>
+                    <p class="text-gray-400 text-center mb-6">Em uma operação no Espírito Santo, a polícia prendeu um
+                        suspeito que não aplicava os golpes diretamente, mas atuava como um "provedor de serviços" para
+                        outras quadrilhas.</p>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-center">
                         <div>
                             <p class="text-3xl font-bold accent-text">R$ 500</p>
                             <p class="font-semibold text-white">Preço por Acesso</p>
-                            <p class="text-sm text-gray-500">Ele vendia acesso a um sistema com dados de processos judiciais.</p>
+                            <p class="text-sm text-gray-500">Ele vendia acesso a um sistema com dados de processos
+                                judiciais.</p>
                         </div>
                         <div>
                             <p class="text-3xl font-bold accent-text">> R$ 100 mil</p>
                             <p class="font-semibold text-white">Faturamento do Suspeito</p>
-                            <p class="text-sm text-gray-500">Lucro obtido apenas fornecendo a "ferramenta" para os golpistas.</p>
+                            <p class="text-sm text-gray-500">Lucro obtido apenas fornecendo a "ferramenta" para os
+                                golpistas.</p>
                         </div>
                     </div>
-                    <p class="text-gray-400 text-center mt-6">Este caso ilustra a especialização: há o <span class="font-bold text-white">fornecedor da informação</span> e o <span class="font-bold text-white">operador do golpe</span>, que usa os dados para contatar a vítima, se passar pelo advogado e solicitar transferências para "liberar valores" do processo.</p>
+                    <p class="text-gray-400 text-center mt-6">Este caso ilustra a especialização: há o <span
+                            class="font-bold text-white">fornecedor da informação</span> e o <span
+                            class="font-bold text-white">operador do golpe</span>, que usa os dados para contatar a
+                        vítima, se passar pelo advogado e solicitar transferências para "liberar valores" do processo.
+                    </p>
                     <p class="source-tag mt-4">Fonte: CNN Brasil</p>
                 </div>
             </div>
         </section>
 
         <hr class="my-16 border-gray-700">
-        
+
         <section id="vulnerability" class="mb-16">
             <h2 class="text-3xl section-title text-center mb-4">O Fator Humano: A Hipervulnerabilidade Social</h2>
-             <p class="text-center text-lg section-subtitle mb-8 max-w-4xl mx-auto">Embora todos estejam suscetíveis, os criminosos miram deliberadamente em grupos específicos. A população idosa é o alvo principal, enfrentando barreiras na transição digital.</p>
+            <p class="text-center text-lg section-subtitle mb-8 max-w-4xl mx-auto">Embora todos estejam suscetíveis, os
+                criminosos miram deliberadamente em grupos específicos. A população idosa é o alvo principal,
+                enfrentando barreiras na transição digital.</p>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <div class="kpi-card text-center">
                     <p class="text-6xl font-black accent-text">+60%</p>
                     <p class="text-xl font-semibold mt-2 text-white">Aumento de golpes contra idosos</p>
-                    <p class="text-gray-400 mt-1">Durante a pandemia, a exploração da vulnerabilidade deste grupo se intensificou drasticamente.</p>
+                    <p class="text-gray-400 mt-1">Durante a pandemia, a exploração da vulnerabilidade deste grupo se
+                        intensificou drasticamente.</p>
                 </div>
                 <div class="kpi-card">
                     <h3 class="text-xl font-bold mb-4 text-white">Fatores de Vulnerabilidade</h3>
                     <ul class="text-left space-y-3 text-gray-400">
-                        <li class="flex items-start"><span class="accent-text mr-2">✔️</span> Dificuldade com a tecnologia e aplicativos bancários.</li>
-                        <li class="flex items-start"><span class="accent-text mr-2">✔️</span> Maior tendência a confiar em supostas "autoridades".</li>
-                        <li class="flex items-start"><span class="accent-text mr-2">✔️</span> Medo acentuado de perder as economias de uma vida.</li>
-                        <li class="flex items-start"><span class="accent-text mr-2">✔️</span> Isolamento social que reduz a rede de apoio para verificação.</li>
+                        <li class="flex items-start"><span class="accent-text mr-2">✔️</span> Dificuldade com a
+                            tecnologia e aplicativos bancários.</li>
+                        <li class="flex items-start"><span class="accent-text mr-2">✔️</span> Maior tendência a confiar
+                            em supostas "autoridades".</li>
+                        <li class="flex items-start"><span class="accent-text mr-2">✔️</span> Medo acentuado de perder
+                            as economias de uma vida.</li>
+                        <li class="flex items-start"><span class="accent-text mr-2">✔️</span> Isolamento social que
+                            reduz a rede de apoio para verificação.</li>
                     </ul>
                 </div>
             </div>
@@ -325,31 +404,41 @@
 
         <section id="legal" class="mb-16">
             <h2 class="text-3xl section-title text-center mb-4">O Cenário Jurídico e a Responsabilidade</h2>
-            <p class="text-center text-lg section-subtitle mb-8 max-w-4xl mx-auto">A justiça brasileira consolidou o entendimento sobre a responsabilidade das instituições, mas a recuperação dos valores ainda é um grande desafio.</p>
+            <p class="text-center text-lg section-subtitle mb-8 max-w-4xl mx-auto">A justiça brasileira consolidou o
+                entendimento sobre a responsabilidade das instituições, mas a recuperação dos valores ainda é um grande
+                desafio.</p>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="kpi-card">
                     <h3 class="text-xl font-bold text-center mb-4 text-white">Responsabilidade Objetiva dos Bancos</h3>
                     <blockquote class="border-l-4 border-[#38B2AC] pl-4 italic text-gray-300">
-                        "As instituições financeiras respondem objetivamente pelos danos gerados por fortuito interno relativo a fraudes e delitos praticados por terceiros no âmbito de operações bancárias."
-                        <cite class="block text-right not-italic mt-2 font-semibold text-white">- Súmula 479 do STJ</cite>
+                        "As instituições financeiras respondem objetivamente pelos danos gerados por fortuito interno
+                        relativo a fraudes e delitos praticados por terceiros no âmbito de operações bancárias."
+                        <cite class="block text-right not-italic mt-2 font-semibold text-white">- Súmula 479 do
+                            STJ</cite>
                     </blockquote>
-                    <p class="mt-4 text-gray-400">A fraude é considerada um risco inerente à atividade bancária. A falha em detectar transações atípicas caracteriza defeito na prestação do serviço, gerando o dever de indenizar.</p>
+                    <p class="mt-4 text-gray-400">A fraude é considerada um risco inerente à atividade bancária. A falha
+                        em detectar transações atípicas caracteriza defeito na prestação do serviço, gerando o dever de
+                        indenizar.</p>
                 </div>
                 <div class="kpi-card">
-                    <h3 class="text-xl font-bold text-center mb-4 text-white">A Baixa Recuperação de Valores via Pix</h3>
+                    <h3 class="text-xl font-bold text-center mb-4 text-white">A Baixa Recuperação de Valores via Pix
+                    </h3>
                     <div class="chart-container">
                         <canvas id="recoveryRateChart"></canvas>
                     </div>
-                    <p class="text-center text-gray-400 mt-4">Apenas 7% do dinheiro perdido em golpes de Pix é recuperado pelo Mecanismo Especial de Devolução (MED), pois os criminosos pulverizam os valores em segundos.</p>
+                    <p class="text-center text-gray-400 mt-4">Apenas 7% do dinheiro perdido em golpes de Pix é
+                        recuperado pelo Mecanismo Especial de Devolução (MED), pois os criminosos pulverizam os valores
+                        em segundos.</p>
                 </div>
             </div>
         </section>
-        
+
         <hr class="my-16 border-gray-700">
 
         <section id="prevention" class="mb-16">
             <h2 class="text-3xl section-title text-center mb-4">Como se Proteger: A Prevenção é a Melhor Defesa</h2>
-            <p class="text-center text-lg section-subtitle mb-8 max-w-4xl mx-auto">Adotar uma postura de desconfiança e seguir regras simples de segurança pode evitar grandes prejuízos.</p>
+            <p class="text-center text-lg section-subtitle mb-8 max-w-4xl mx-auto">Adotar uma postura de desconfiança e
+                seguir regras simples de segurança pode evitar grandes prejuízos.</p>
             <div class="bg-gray-800 rounded-lg shadow-lg p-6 md:p-8">
                 <h3 class="text-2xl font-bold text-center mb-6 text-white">As Regras de Ouro da Segurança Bancária</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
@@ -357,38 +446,46 @@
                         <p class="text-2xl mr-4">🛑</p>
                         <div>
                             <h4 class="font-bold text-white">NUNCA forneça senhas</h4>
-                            <p class="text-gray-400">Bancos e instituições legítimas jamais solicitam sua senha, token ou código de segurança por telefone, SMS ou e-mail.</p>
+                            <p class="text-gray-400">Bancos e instituições legítimas jamais solicitam sua senha, token
+                                ou código de segurança por telefone, SMS ou e-mail.</p>
                         </div>
                     </div>
                     <div class="flex items-start">
                         <p class="text-2xl mr-4">🛑</p>
                         <div>
                             <h4 class="font-bold text-white">NUNCA entregue seu cartão</h4>
-                            <p class="text-gray-400">Não existe procedimento para recolhimento de cartão, nem mesmo se ele estiver cortado. É golpe.</p>
+                            <p class="text-gray-400">Não existe procedimento para recolhimento de cartão, nem mesmo se
+                                ele estiver cortado. É golpe.</p>
                         </div>
                     </div>
                     <div class="flex items-start">
                         <p class="text-2xl mr-4">🛑</p>
                         <div>
                             <h4 class="font-bold text-white">NUNCA clique em links suspeitos</h4>
-                            <p class="text-gray-400">Desconfie de mensagens com ofertas mirabolantes, alertas de segurança ou pedidos de atualização cadastral.</p>
+                            <p class="text-gray-400">Desconfie de mensagens com ofertas mirabolantes, alertas de
+                                segurança ou pedidos de atualização cadastral.</p>
                         </div>
                     </div>
                     <div class="flex items-start">
                         <p class="text-2xl mr-4">🛑</p>
                         <div>
                             <h4 class="font-bold text-white">DESLIGUE e verifique</h4>
-                            <p class="text-gray-400">Recebeu uma ligação suspeita? Desligue. Em seguida, ligue para os canais oficiais do seu banco (número no verso do cartão) de outro aparelho para confirmar.</p>
+                            <p class="text-gray-400">Recebeu uma ligação suspeita? Desligue. Em seguida, ligue para os
+                                canais oficiais do seu banco (número no verso do cartão) de outro aparelho para
+                                confirmar.</p>
                         </div>
                     </div>
                 </div>
                 <div class="mt-8 border-t border-gray-700 pt-6">
-                     <h3 class="text-2xl font-bold text-center mb-4 text-white">Fui Vítima, e Agora?</h3>
-                     <ol class="list-decimal list-inside space-y-2 text-lg text-gray-300 max-w-2xl mx-auto">
-                        <li><b>Aja Rápido:</b> Contate seu banco imediatamente pelos canais oficiais e solicite o bloqueio da conta e a abertura do MED (para Pix).</li>
-                        <li><b>Registre:</b> Faça um Boletim de Ocorrência (B.O.) online ou presencial, com o máximo de detalhes.</li>
-                        <li><b>Guarde Tudo:</b> Salve todas as provas: prints de conversas, números de telefone, comprovantes e protocolos de atendimento.</li>
-                     </ol>
+                    <h3 class="text-2xl font-bold text-center mb-4 text-white">Fui Vítima, e Agora?</h3>
+                    <ol class="list-decimal list-inside space-y-2 text-lg text-gray-300 max-w-2xl mx-auto">
+                        <li><b>Aja Rápido:</b> Contate seu banco imediatamente pelos canais oficiais e solicite o
+                            bloqueio da conta e a abertura do MED (para Pix).</li>
+                        <li><b>Registre:</b> Faça um Boletim de Ocorrência (B.O.) online ou presencial, com o máximo de
+                            detalhes.</li>
+                        <li><b>Guarde Tudo:</b> Salve todas as provas: prints de conversas, números de telefone,
+                            comprovantes e protocolos de atendimento.</li>
+                    </ol>
                 </div>
             </div>
         </section>
@@ -399,14 +496,55 @@
             <h2 class="text-3xl section-title text-center mb-4">Fontes e Referências</h2>
             <div class="kpi-card text-sm text-gray-400">
                 <ul class="list-disc list-inside space-y-3">
-                    <li>AGÊNCIA BRASIL. Golpes financeiros contra idosos cresceram 60%, diz Febraban. <b>EBC</b>, 2 set. 2020. Disponível em: <a href="https://agenciabrasil.ebc.com.br/economia/noticia/2020-09/golpes-financeiros-contra-idosos-cresceram-60-diz-febraban" target="_blank" class="reference-link">https://agenciabrasil.ebc.com.br/economia/noticia/2020-09/golpes-financeiros-contra-idosos-cresceram-60-diz-febraban</a>. Acesso em: 30 jul. 2025.</li>
-                    <li>BRASIL. **Lei nº 14.155, de 27 de maio de 2021**. Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para tornar mais graves os crimes de violação de dispositivo informático, furto e estelionato cometidos de forma eletrônica ou pela internet. Diário Oficial da União, Brasília, DF, 28 maio 2021. Disponível em: <a href="http://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/L14155.htm" target="_blank" class="reference-link">http://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/L14155.htm</a>. Acesso em: 30 jul. 2025.</li>
-                    <li>BRASIL. Superior Tribunal de Justiça. **Súmula nº 479**. As instituições financeiras respondem objetivamente pelos danos gerados por fortuito interno relativo a fraudes e delitos praticados por terceiros no âmbito de operações bancárias. Brasília, DF: Superior Tribunal de Justiça, [2012]. Disponível em: <a href="https://www.stj.jus.br/docs_internet/VerbetesSTJ_asc.pdf" target="_blank" class="reference-link">https://www.stj.jus.br/docs_internet/VerbetesSTJ_asc.pdf</a>. Acesso em: 30 jul. 2025.</li>
-                    <li>CNN BRASIL. Polícia prende suspeito de vender acessos para golpe do falso advogado. **CNN Brasil**, 29 jul. 2025. Disponível em: <a href="https://www.cnnbrasil.com.br/nacional/sudeste/es/policia-prende-suspeito-de-vender-acessos-para-golpe-do-falso-advogado/" target="_blank" class="reference-link">https://www.cnnbrasil.com.br/nacional/sudeste/es/policia-prende-suspeito-de-vender-acessos-para-golpe-do-falso-advogado/</a>. Acesso em: 30 jul. 2025.</li>
-                    <li>FEDERAÇÃO BRASILEIRA DE BANCOS. **Pesquisa FEBRABAN de Tecnologia Bancária 2024**. São Paulo: FEBRABAN, 2024. Disponível em: <a href="https://portal.febraban.org.br/noticia/3860/pt-br/" target="_blank" class="reference-link">https://portal.febraban.org.br/noticia/3860/pt-br/</a>. Acesso em: 30 jul. 2025.</li>
-                    <li>FÓRUM BRASILEIRO DE SEGURANÇA PÚBLICA. **Anuário Brasileiro de Segurança Pública 2025**. São Paulo: FBSP, 2025. Disponível em: <a href="https://forumseguranca.org.br/anuario-brasileiro-seguranca-publica/" target="_blank" class="reference-link">https://forumseguranca.org.br/anuario-brasileiro-seguranca-publica/</a>. Acesso em: 30 jul. 2025.</li>
-                    <li>INFOMONEY. Prejuízo com fraudes no Pix cresce 70% e atinge R$ 4,9 bi em 2024, segundo BC. **InfoMoney**, 21 abr. 2025. Disponível em: <a href="https://www.infomoney.com.br/minhas-financas/prejuizo-com-fraudes-no-pix-cresce-70-e-atinge-r-49-bi-em-2024-segundo-bc/" target="_blank" class="reference-link">https://www.infomoney.com.br/minhas-financas/prejuizo-com-fraudes-no-pix-cresce-70-e-atinge-r-49-bi-em-2024-segundo-bc/</a>. Acesso em: 30 jul. 2025.</li>
-                    <li>PODER360. Golpes causaram prejuízo de R$ 10,1 bi em 2024, diz Febraban. **Poder360**, 12 mar. 2025. Disponível em: <a href="https://www.poder360.com.br/economia/golpes-causaram-prejuizo-de-r-101-bi-em-2024-diz-febraban/" target="_blank" class="reference-link">https://www.poder360.com.br/economia/golpes-causaram-prejuizo-de-r-101-bi-em-2024-diz-febraban/</a>. Acesso em: 30 jul. 2025.</li>
+                    <li>AGÊNCIA BRASIL. Golpes financeiros contra idosos cresceram 60%, diz Febraban. <b>EBC</b>, 2 set.
+                        2020. Disponível em: <a
+                            href="https://agenciabrasil.ebc.com.br/economia/noticia/2020-09/golpes-financeiros-contra-idosos-cresceram-60-diz-febraban"
+                            target="_blank"
+                            class="reference-link">https://agenciabrasil.ebc.com.br/economia/noticia/2020-09/golpes-financeiros-contra-idosos-cresceram-60-diz-febraban</a>.
+                        Acesso em: 30 jul. 2025.</li>
+                    <li>BRASIL. **Lei nº 14.155, de 27 de maio de 2021**. Altera o Decreto-Lei nº 2.848, de 7 de
+                        dezembro de 1940 (Código Penal), para tornar mais graves os crimes de violação de dispositivo
+                        informático, furto e estelionato cometidos de forma eletrônica ou pela internet. Diário Oficial
+                        da União, Brasília, DF, 28 maio 2021. Disponível em: <a
+                            href="http://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/L14155.htm"
+                            target="_blank"
+                            class="reference-link">http://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/L14155.htm</a>.
+                        Acesso em: 30 jul. 2025.</li>
+                    <li>BRASIL. Superior Tribunal de Justiça. **Súmula nº 479**. As instituições financeiras respondem
+                        objetivamente pelos danos gerados por fortuito interno relativo a fraudes e delitos praticados
+                        por terceiros no âmbito de operações bancárias. Brasília, DF: Superior Tribunal de Justiça,
+                        [2012]. Disponível em: <a href="https://www.stj.jus.br/docs_internet/VerbetesSTJ_asc.pdf"
+                            target="_blank"
+                            class="reference-link">https://www.stj.jus.br/docs_internet/VerbetesSTJ_asc.pdf</a>. Acesso
+                        em: 30 jul. 2025.</li>
+                    <li>CNN BRASIL. Polícia prende suspeito de vender acessos para golpe do falso advogado. **CNN
+                        Brasil**, 29 jul. 2025. Disponível em: <a
+                            href="https://www.cnnbrasil.com.br/nacional/sudeste/es/policia-prende-suspeito-de-vender-acessos-para-golpe-do-falso-advogado/"
+                            target="_blank"
+                            class="reference-link">https://www.cnnbrasil.com.br/nacional/sudeste/es/policia-prende-suspeito-de-vender-acessos-para-golpe-do-falso-advogado/</a>.
+                        Acesso em: 30 jul. 2025.</li>
+                    <li>FEDERAÇÃO BRASILEIRA DE BANCOS. **Pesquisa FEBRABAN de Tecnologia Bancária 2024**. São Paulo:
+                        FEBRABAN, 2024. Disponível em: <a href="https://portal.febraban.org.br/noticia/3860/pt-br/"
+                            target="_blank"
+                            class="reference-link">https://portal.febraban.org.br/noticia/3860/pt-br/</a>. Acesso em: 30
+                        jul. 2025.</li>
+                    <li>FÓRUM BRASILEIRO DE SEGURANÇA PÚBLICA. **Anuário Brasileiro de Segurança Pública 2025**. São
+                        Paulo: FBSP, 2025. Disponível em: <a
+                            href="https://forumseguranca.org.br/anuario-brasileiro-seguranca-publica/" target="_blank"
+                            class="reference-link">https://forumseguranca.org.br/anuario-brasileiro-seguranca-publica/</a>.
+                        Acesso em: 30 jul. 2025.</li>
+                    <li>INFOMONEY. Prejuízo com fraudes no Pix cresce 70% e atinge R$ 4,9 bi em 2024, segundo BC.
+                        **InfoMoney**, 21 abr. 2025. Disponível em: <a
+                            href="https://www.infomoney.com.br/minhas-financas/prejuizo-com-fraudes-no-pix-cresce-70-e-atinge-r-49-bi-em-2024-segundo-bc/"
+                            target="_blank"
+                            class="reference-link">https://www.infomoney.com.br/minhas-financas/prejuizo-com-fraudes-no-pix-cresce-70-e-atinge-r-49-bi-em-2024-segundo-bc/</a>.
+                        Acesso em: 30 jul. 2025.</li>
+                    <li>PODER360. Golpes causaram prejuízo de R$ 10,1 bi em 2024, diz Febraban. **Poder360**, 12 mar.
+                        2025. Disponível em: <a
+                            href="https://www.poder360.com.br/economia/golpes-causaram-prejuizo-de-r-101-bi-em-2024-diz-febraban/"
+                            target="_blank"
+                            class="reference-link">https://www.poder360.com.br/economia/golpes-causaram-prejuizo-de-r-101-bi-em-2024-diz-febraban/</a>.
+                        Acesso em: 30 jul. 2025.</li>
                 </ul>
             </div>
         </section>
@@ -415,25 +553,33 @@
 
         <section id="gemini-assistant" class="mb-16">
             <h2 class="text-3xl section-title text-center mb-4">✨ Assistente de Ação Pós-Fraude</h2>
-            <p class="text-center text-lg section-subtitle mb-8 max-w-4xl mx-auto">Foi vítima de um golpe? Descreva o que aconteceu abaixo e a nossa inteligência artificial irá gerar um plano de ação personalizado para você seguir.</p>
+            <p class="text-center text-lg section-subtitle mb-8 max-w-4xl mx-auto">Foi vítima de um golpe? Descreva o
+                que aconteceu abaixo e a nossa inteligência artificial irá gerar um plano de ação personalizado para
+                você seguir.</p>
             <div class="kpi-card max-w-4xl mx-auto w-full">
                 <div class="space-y-4">
                     <div>
-                        <label for="scamType" class="block mb-2 text-sm font-medium text-white">Qual tipo de golpe você sofreu?</label>
-                        <select id="scamType" class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-teal-500 focus:border-teal-500 block w-full p-2.5">
+                        <label for="scamType" class="block mb-2 text-sm font-medium text-white">Qual tipo de golpe você
+                            sofreu?</label>
+                        <select id="scamType"
+                            class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-teal-500 focus:border-teal-500 block w-full p-2.5">
                             <option selected>Escolha uma opção</option>
                             <option value="Golpe da Falsa Central">Golpe da Falsa Central / Falso Motoboy</option>
                             <option value="Golpe do Falso Parente (WhatsApp)">Golpe do Falso Parente (WhatsApp)</option>
                             <option value="Golpe do Falso Boleto">Golpe do Falso Boleto</option>
-                            <option value="Golpe do Falso Advogado">Golpe do Falso Advogado / Liberação de Valores</option>
+                            <option value="Golpe do Falso Advogado">Golpe do Falso Advogado / Liberação de Valores
+                            </option>
                             <option value="Cartão de crédito clonado">Cartão de crédito clonado</option>
                             <option value="Invasão de conta bancária">Invasão de conta bancária</option>
                             <option value="Outro">Outro tipo de golpe</option>
                         </select>
                     </div>
                     <div>
-                        <label for="scamDescription" class="block mb-2 text-sm font-medium text-white">Descreva brevemente o que aconteceu:</label>
-                        <textarea id="scamDescription" rows="4" class="block p-2.5 w-full text-sm text-white bg-gray-700 rounded-lg border border-gray-600 focus:ring-teal-500 focus:border-teal-500" placeholder="Ex: Recebi uma ligação, me passaram um número de protocolo e pediram para eu fazer um Pix para 'cancelar' uma compra..."></textarea>
+                        <label for="scamDescription" class="block mb-2 text-sm font-medium text-white">Descreva
+                            brevemente o que aconteceu:</label>
+                        <textarea id="scamDescription" rows="4"
+                            class="block p-2.5 w-full text-sm text-white bg-gray-700 rounded-lg border border-gray-600 focus:ring-teal-500 focus:border-teal-500"
+                            placeholder="Ex: Recebi uma ligação, me passaram um número de protocolo e pediram para eu fazer um Pix para 'cancelar' uma compra..."></textarea>
                     </div>
                     <div class="text-center">
                         <button id="generatePlanButton" class="gemini-button">
@@ -451,8 +597,11 @@
 
     <footer class="bg-gray-900 text-white text-center p-6 mt-12">
         <p>Este infográfico é um material de apoio informativo. Para casos concretos, consulte um advogado.</p>
-        <p class="text-sm text-gray-500 mt-2">Desenvolvido para a Comissão de Direito Bancário da OAB/RN - Julho de 2025</p>
+        <p class="text-sm text-gray-500 mt-2">Desenvolvido para a Comissão de Direito Bancário da OAB/RN - Julho de 2025
+        </p>
     </footer>
+
+    <script src="config.js"></script>
 
     <script>
         const generatePlanButton = document.getElementById('generatePlanButton');
@@ -498,9 +647,9 @@
                 let chatHistory = [];
                 chatHistory.push({ role: "user", parts: [{ text: prompt }] });
                 const payload = { contents: chatHistory };
-                const apiKey = ""; 
+                const apiKey = API_KEY;
                 const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
-                
+
                 const response = await fetch(apiUrl, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
@@ -549,12 +698,12 @@
             plugins: {
                 legend: {
                     labels: {
-                        color: '#A0AEC0' 
+                        color: '#A0AEC0'
                     }
                 },
                 tooltip: {
                     callbacks: {
-                        title: function(tooltipItems) {
+                        title: function (tooltipItems) {
                             const item = tooltipItems[0];
                             let label = item.chart.data.labels[item.dataIndex];
                             if (Array.isArray(label)) { return label.join(' '); }
@@ -572,7 +721,7 @@
                     beginAtZero: true,
                     ticks: {
                         color: '#A0AEC0',
-                        callback: function(value) {
+                        callback: function (value) {
                             if (value >= 1e9) {
                                 return 'R$ ' + (value / 1e9).toFixed(1).replace('.', ',') + ' Bi';
                             }
@@ -587,7 +736,7 @@
                 }
             }
         };
-        
+
         const doughnutChartOptions = { ...chartDefaultOptions };
 
         new Chart(document.getElementById('totalLossChart'), {
@@ -637,4 +786,5 @@
     </script>
 
 </body>
+
 </html>
